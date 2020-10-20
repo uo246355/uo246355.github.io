@@ -25,9 +25,11 @@ body {
     background-color: transparent;
     font-size: 120%;
 }
-
+img + img + img {
+    border-left: 40px;
+}
 nav {
-    font: italic;
+    font: bolder;
     font-size: 200%;
     position: relative; left: 40px;
     
