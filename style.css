@@ -1,0 +1,37 @@
+h2 { color : green }
+h1 { font-weight: bold;}
+table { font-weight: bold; 
+ }
+ th{
+     padding: 5px;
+     text-decoration: underline;
+ }
+
+table th,td {
+ 
+  text-align: center;
+}
+
+td + td{
+    border-left: 40px solid transparent;
+}
+p {font-family: 'Times New Roman', Times, serif;}
+body {
+    color: white;
+    background-image: url("multimedia/img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 120%;
+}
+
+nav {
+    font: italic;
+    font-size: 200%;
+    position: relative; left: 40px;
+    
+}
+
+a + a {
+    border-left: 40px solid transparent;
+}
