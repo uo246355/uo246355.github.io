@@ -1,5 +1,6 @@
 h2 { color : green }
-h1 { font-weight: bold;}
+h1 { font-weight: bold;
+color: green;}
 table { font-weight: bold; 
  }
  th{
@@ -17,7 +18,7 @@ td + td{
 }
 p {font-family: 'Times New Roman', Times, serif;}
 body {
-    color: white;
+    color: green;
     background-image: url("multimedia/img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
