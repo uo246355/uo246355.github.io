@@ -1,8 +1,8 @@
 
-    .poster{
+    .poster{ /* a=0 b=1 c=0 -> specificity =   10 */
         margin-top: 150%;
     }
-  .container {
+  .container { /* a=0 b=1 c=0 -> specificity =   10 */
     display: grid;
     grid-template-columns: 30% 30%;
     grid-template-rows: 10% 70%;

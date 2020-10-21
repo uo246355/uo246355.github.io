@@ -1,27 +1,27 @@
-h2 { color : green }
-h1 { font-weight: bold;
-color: green;}
-table { font-weight: bold; 
+h2 { color : green } /* a=0 b=0 c=1 -> specificity =   1 */
+h1 { font-weight: bold; /* a=0 b=0 c=1 -> specificity =   1 */
+color: green;} 
+table { font-weight: bold; /* a=0 b=0 c=1 -> specificity =   1 */
     color: green;
  }
- th{
+ th{ /* a=0 b=0 c=1 -> specificity =   1 */
      padding: 5px;
      text-decoration: underline;
      color: green;
  }
 
-table th,td {
+table th td {  /* a=0 b=0 c=3 -> specificity =   3 */
  
   text-align: center;
   color: green;
 }
 
-td + td{
+td + td{ /* a=0 b=0 c=2 -> specificity =   2 */
     border-left: 40px solid transparent;
 }
-p {font-family: 'Times New Roman', Times, serif;}
-body {
-    color: green;
+p {font-family: 'Times New Roman', Times, serif;} /* a=0 b=0 c=1 -> specificity =   1 */
+body {  /* a=0 b=0 c=1 -> specificity =   1 */
+    color: green;  
     background-image: url("multimedia/img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,16 +29,16 @@ body {
     background-color: transparent;
     font-size: 120%;
 }
-img + img + img {
+img + img + img {  /* a=0 b=0 c=3 -> specificity =   3 */
     border-left: 40px;
 }
-nav {
+nav { /* a=0 b=0 c=1 -> specificity =   1 */
     font: bolder;
     font-size: 200%;
     position: relative; left: 40px;
     
 }
 
-a + a {
+a + a { /* a=0 b=0 c=2 -> specificity =   2 */
     border-left: 40px solid transparent;
 }
