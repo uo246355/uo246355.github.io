@@ -2,15 +2,18 @@ h2 { color : green }
 h1 { font-weight: bold;
 color: green;}
 table { font-weight: bold; 
+    color: green;
  }
  th{
      padding: 5px;
      text-decoration: underline;
+     color: green;
  }
 
 table th,td {
  
   text-align: center;
+  color: green;
 }
 
 td + td{
