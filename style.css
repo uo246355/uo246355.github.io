@@ -1,27 +1,32 @@
 h2 { color : green } /* a=0 b=0 c=1 -> specificity =   1 */
 h1 { font-weight: bold; /* a=0 b=0 c=1 -> specificity =   1 */
-color: green;} 
+color: green;
+background-color: transparent;} 
 table { font-weight: bold; /* a=0 b=0 c=1 -> specificity =   1 */
     color: green;
+    background-color: transparent;
  }
  th{ /* a=0 b=0 c=1 -> specificity =   1 */
      padding: 5%;
      text-decoration: underline;
      color: green;
+     background-color: transparent;
  }
 
 table th td {  /* a=0 b=0 c=3 -> specificity =   3 */
  
   text-align: center;
   color: green;
+  background-color: transparent;
 }
 
 td + td{ /* a=0 b=0 c=2 -> specificity =   2 */
-    border-left: 5% solid transparent;
+    border-left: 5px solid transparent;
 }
 p {font-family: 'Times New Roman', Times, serif;} /* a=0 b=0 c=1 -> specificity =   1 */
 body {  /* a=0 b=0 c=1 -> specificity =   1 */
-    color: green;  
+    color: green; 
+     
     background-image: url("multimedia/img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,7 +35,7 @@ body {  /* a=0 b=0 c=1 -> specificity =   1 */
     font-size: 120%;
 }
 img + img + img {  /* a=0 b=0 c=3 -> specificity =   3 */
-    border-left: 5%;
+    border-left: 20px;
 }
 nav { /* a=0 b=0 c=1 -> specificity =   1 */
     font: bolder;
