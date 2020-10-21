@@ -5,7 +5,7 @@ table { font-weight: bold; /* a=0 b=0 c=1 -> specificity =   1 */
     color: green;
  }
  th{ /* a=0 b=0 c=1 -> specificity =   1 */
-     padding: 5px;
+     padding: 5%;
      text-decoration: underline;
      color: green;
  }
@@ -17,7 +17,7 @@ table th td {  /* a=0 b=0 c=3 -> specificity =   3 */
 }
 
 td + td{ /* a=0 b=0 c=2 -> specificity =   2 */
-    border-left: 40px solid transparent;
+    border-left: 5% solid transparent;
 }
 p {font-family: 'Times New Roman', Times, serif;} /* a=0 b=0 c=1 -> specificity =   1 */
 body {  /* a=0 b=0 c=1 -> specificity =   1 */
@@ -30,15 +30,16 @@ body {  /* a=0 b=0 c=1 -> specificity =   1 */
     font-size: 120%;
 }
 img + img + img {  /* a=0 b=0 c=3 -> specificity =   3 */
-    border-left: 40px;
+    border-left: 5%;
 }
 nav { /* a=0 b=0 c=1 -> specificity =   1 */
     font: bolder;
     font-size: 200%;
-    position: relative; left: 40px;
+    position: relative; left: 5%;
+    display: flex;
     
 }
 
 a + a { /* a=0 b=0 c=2 -> specificity =   2 */
-    border-left: 40px solid transparent;
+    border-left: 150px solid transparent;
 }
